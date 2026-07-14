@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroSpace - Perfil da Kitty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="nav-bar">
+        <div class="logo">RetroSpace★</div>
+        <div class="menu">
+            <span class="active">Home</span> | <span>Perfil</span> | <span>Amigos</span> | <span>Blog</span>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <aside class="left-column">
+            
+            <div class="box profile-box">
+                <h2>kitty</h2>
+                <div class="profile-pic">
+                    <div class="avatar-placeholder">★</div>
+                </div>
+                <div class="profile-info">
+                    <p><strong>Gênero:</strong> Feminino</p>
+                    <p><strong>Idade:</strong> 16 anos</p>
+                    <p><strong>Cidade:</strong> Kalos, CA</p>
+                    <p class="status-online">● Online</p>
+                </div>
+            </div>
+
+            <div class="box contact-box">
+                <h3>Contatos</h3>
+                <div class="button-grid">
+                    <button onclick="enviarMensagem()">Enviar MSG</button>
+                    <button onclick="adicionarAmigo()">Add Amigo</button>
+                    <button onclick="compartilhar()">Favoritar</button>
+                    <button onclick="bloquear()">Bloquear</button>
+                </div>
+            </div>
+
+            <div class="box details-box">
+                <h3>Detalhes da Kitty</h3>
+                <table>
+                    <tr><td><strong>Status:</strong></td><td>Em um relacionamento</td></tr>
+                    <tr><td><strong>Ocupação:</strong></td><td>Estudante / Guitarrista</td></tr>
+                    <tr><td><strong>Escola:</strong></td><td>Hope's Peak Academy</td></tr>
+                    <tr><td><strong>Interesses:</strong></td><td>Anime, Música, Jogos</td></tr>
+                </table>
+            </div>
+
+        </aside>
+
+        <main class="right-column">
+            
+            <div class="box status-box">
+                <h2>Último Status</h2>
+                <div class="status-content">
+                    <p id="current-status">"Tocando guitarra e ouvindo muito rock clássico! 🎸🔥"</p>
+                    <hr>
+                    <div class="update-status-form">
+                        <input type="text" id="status-input" placeholder="Atualizar seu status...">
+                        <button onclick="atualizarStatus()">Atualizar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box about-box">
+                <h3>Sobre Mim</h3>
+                <p>Oi! Eu sou a Kitty. Adoro passar o tempo com meus amigos, tocar guitarra e jogar videogame nos finais de semana. Seja bem-vindo ao meu espaço!</p>
+                
+                <h4 style="margin-top: 15px;">Quem eu gostaria de conhecer:</h4>
+                <p>Pessoas que gostem de metalheads, jogos de console, anime e que queiram trocar recomendações de músicas legais!</p>
+                
+                <div class="badges">
+                    <span class="badge red">★ Pepsi Addict ★</span>
+                    <span class="badge green">🎸 Metal Core</span>
+                    <span class="badge blue">🎮 Gamer</span>
+                </div>
+            </div>
+
+            <div class="box friends-box">
+                <h3>Amigos da Kitty (8)</h3>
+                <div class="friends-grid">
+                    <div class="friend-card"><div class="friend-pic"></div><span>Kuro</span></div>
+                    <div class="friend-card"><div class="friend-pic"></div><span>Vanni</span></div>
+                    <div class="friend-card"><div class="friend-pic"></div><span>Kira</span></div>
+                    <div class="friend-card"><div class="friend-pic"></div><span>Gigi</span></div>
+                    <div class="friend-card"><div class="friend-pic"></div><span>Nicky</span></div>
+                    <div class="friend-card"><div class="friend-pic"></div><span>El</span></div>
+                    <div class="friend-card"><div class="friend-pic"></div><span>Rand</span></div>
+                    <div class="friend-card"><div class="friend-pic"></div><span>Lumi</span></div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
